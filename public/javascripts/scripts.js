@@ -1,4 +1,4 @@
-var socket = io('//localhost:3000');
+var socket = io('https://nodejs-chat-online.herokuapp.com/');
 $('.form-chat').submit(function() {
   var name = $('.current-name .name').text();
   socket.emit('chat message', $('.input-message').val(), name);
