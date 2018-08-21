@@ -1,0 +1,39 @@
+extends layout
+
+block vars
+  -bodyClass = 'home-page'
+
+block content
+  h1.text-center Live Chat
+  .live-chat-wrapper
+    form.form-login-chat(method="post")
+      input(type="text", name="username", placeholder="Họ tên")
+      input(type="text", name="email", placeholder="Email")
+      input(type="text", name="phone", placeholder="Số điện thoại")
+      button(type="submit") Chat ngay
+    .current-name
+      span.name= name
+      span.logout Thoát
+    .block-chat
+      ul.list-chat
+        //- li.chat-item.sender
+        //-   .avatar
+        //-     img(src="/images/doraemon.png")
+        //-   .content
+        //-     .name Đặng Trương Duy
+        //-     .message-text 
+        //-       p 
+        //-         span Chào bạn
+        //- li.chat-item.receiver
+        //-   .avatar
+        //-     img(src="/images/avatar-2.png")
+        //-   .content
+        //-     .name Đặng Trương Duy 2
+        //-     .message-text 
+        //-       p 
+        //-         span Test
+        //-       p 
+        //-         span Test 2
+      form.form-chat(method="post")
+        .form-control
+          input.input-message(type="text", placeholder="Nhập nội dung chat ở đây")

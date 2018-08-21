@@ -1,0 +1,16 @@
+extends layout
+
+block vars
+  -bodyClass = 'login-page'
+
+block content
+  .login-chat-wrapper
+    h1.title Sign in
+    form.form-login(method="post")
+      input(type="text", name="username", placeholder="User Name")
+      input(type="text", name="password", placeholder="Password")
+      .button-row
+        button(type="submit") Sign in
+    p.note
+      | You need an account 
+      a(href="/users/register") Register

@@ -1,0 +1,17 @@
+block vars
+  -title = 'Home Page'
+  -bodyClass = ''
+
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/prefix/style.css')
+    meta(charset="utf-8")
+  body(class=bodyClass)
+    block content
+    script(src="/socket.io/socket.io.js")
+    script(src="https://code.jquery.com/jquery-1.11.1.js")
+    script(src="javascripts/scripts.js")
+      

@@ -1,0 +1,9 @@
+{
+  "dbConfig": {
+    "username": "nhieunguyen1510",
+    "password": "",
+    "database": "hrm",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
